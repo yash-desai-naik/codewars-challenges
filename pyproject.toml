@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "codewars-challenges"
+version = "0.1.0"
+description = ""
+authors = ["Yash Desai <yash.desai.naik@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+cowsay = "^6.1"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
