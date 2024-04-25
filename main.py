@@ -1,14 +1,14 @@
-from utils import create_df
+from typing import List
 
-data: list[int] = [1, 2, 3]
+from packages.api import get_facts
+from packages.modules.cats.cats_module import CatFact
 
 
 def main() -> None:
-    name_: int = 2
-    name_ = name_ + 1
-    name_ = name_ + 1
-    print(name_)
-    create_df(data_=data)
+    facts: List[CatFact] = get_facts()
+    for fact in facts:
+        print(f"- {fact.text}")
+        print(f"- {fact.status.verified}")
 
 
 if __name__ == '__main__':
