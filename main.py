@@ -1,5 +1,7 @@
 import challenge_1
 import challenge_2
+import pretty_errors
+ 
 
 if __name__ == '__main__':
     print("Running tests for challenge_1.py")
